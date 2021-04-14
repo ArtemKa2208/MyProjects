@@ -1,0 +1,810 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+body,p{
+    margin: 0;
+    padding: 0;
+}
+.auth_body{
+    /* background-color: rgb(252, 197, 125); */
+    /* background: linear-gradient(to right, hsl(34, 97%, 70%), #cdff44); */
+    background-image: url('img/139.jpg');
+}
+header{
+    width: 100%;
+    background-color: rgb(252, 197, 125);
+    border-bottom: 5px solid black;
+}
+.header{
+    width: 100%;
+    height: 170px;
+    background-image: url('img/158.png');
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    /* background-size: contain; */
+}
+.logo{
+    height: 55%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.8;
+}
+
+.navigation button{
+    background-color: rgb(226 226 226);
+    height: 40px;
+    width: 15%;
+    margin-right: 30px;
+    font-weight: 700;
+    border: 4px solid rgb(44, 46, 43);
+    color:rgb(155, 155, 155);
+    font-size: 20px;
+    box-shadow: 2px 1px 3px rgb(0, 0, 0);
+    text-shadow: 2.5px 1px 1px rgb(0, 0, 0);
+    outline: none;
+}
+.navigation button:hover{
+    border: 2px dashed rgb(44, 46, 43);
+}
+
+
+.navigation{
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+.header_about{
+    font-family: 'Rubik One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color:rgba(251, 255, 32, 0.918);
+    text-shadow: 3px 2px 2px black;
+    margin-bottom: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* font-weight: 700; */
+    border: 5px solid rgb(71, 71, 71);
+    background-color: rgba(145, 145, 145, 0.299);
+    border-radius: 50px;
+}
+.content{
+    width: 100%;
+    /* background-color: rgb(252, 197, 125); */
+    /* background: linear-gradient(to right, hsl(34, 97%, 70%), #cdff44); */
+    background-image: url('img/139.jpg');
+    /* background-size: 100%; */;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.img_first{
+    width: 77%;
+    height: 500px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;  
+    border: 7px solid white;
+    box-shadow: 4px 4px 5px black,
+                -4px -4px 5px black;
+
+}
+.text_in_content{
+    font-family: 'Rubik One', sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(69, 69, 69);
+    /* font-weight: 800; */
+    text-shadow: 1px 1px 1px white;
+}
+.header_text_in_content{
+    font-family: 'Rubik One', sans-serif;
+    /* font-weight: 700; */
+    font-size: 38px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgba(65, 245, 255, 0.836);
+    text-shadow: 3px 1px 3px black;
+}
+footer{
+    /* background-color: rgb(95, 95, 95); */
+    background-image: url('img/60.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 6px solid rgb(54, 54, 54);
+}
+
+.header_contact{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 2px black;
+}
+.logo_team{
+    width: 90px;
+}
+
+.p_logo{
+    text-align: center;
+}
+.contact_text{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+.contact_img{
+    width: 55px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.adress_text{
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(253, 253, 253);
+}
+
+.tours_form_search{
+   text-align: center;
+   width: 500px;
+   border: 4px solid black;
+   padding: 10px;
+   background-color: rgb(165, 195, 255);
+}
+.tours_form_search label{
+    font-size: 25px;
+    font-weight: 800;
+}
+.tours_form_search_input{
+    width: 470px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 4px solid black;
+}
+.tours_form_search_button{
+    height: 60px;
+    width: 470px;
+    margin-top: 10px;
+    border: 4px solid black;
+    background-color: rgb(42, 77, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+.div_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:50px;
+}
+
+
+/* авторизация */
+.div_form_auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:50px;
+   
+}
+.div_form_auth form{
+    text-align: center;
+    width: 500px;
+    border: 4px solid black;
+    padding: 10px;
+    background-color: rgb(165, 195, 255);
+}
+.form_auth_label{
+    font-size: 20px;
+    font-weight: 600; 
+    display: block;
+}
+.div_form_auth input{
+    width: 470px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 4px solid black; 
+    font-size: 20px;
+}
+.div_form_auth p{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 800; 
+}
+.div_form_auth button{
+    height: 50px;
+    width: 480px;
+    margin-top: 20px;
+    border: 4px solid black;
+    background-color: rgb(42, 77, 255);
+    font-size: 20px;
+    font-weight: 600; 
+    margin-bottom: 15px;
+}
+.div_form_auth a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+.div_form_add_tour{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:50px;
+}
+.div_form_add_tour form{
+    text-align: center;
+    width: 500px;
+    border: 4px solid black;
+    padding: 10px;
+    background-color: rgb(165, 195, 255);
+}
+.form_add_tour_label{
+    font-size: 25px;
+    font-weight: 800;
+}
+.div_form_add_tour p{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 800; 
+    color: rgb(255, 255, 255);
+}
+.div_form_add_tour input,textarea{
+    width: 487px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 4px solid black;
+    display: block;
+    background-color: rgb(224, 224, 224);
+}
+.div_form_add_tour textarea{
+    height: 100px;
+}
+.form_add_tour_label_date,.form_add_tour_label_photo{
+    display: block;
+    margin-top: 10px;
+}
+.div_form_add_tour button{
+    height: 60px;
+    width: 470px;
+    margin-top: 10px;
+    border: 4px solid black;
+    background-color: rgb(42, 77, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+.div_form_add_tour select{
+    width: 50px;
+    font-weight: 600;
+    border: 2px solid black;
+}
+.img_in_tour{
+    width: 100%;
+    height: 250px;
+    border-bottom: 4px solid rgb(54, 54, 54);
+}
+.all_tours{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+    margin-top: 40px;
+}
+.div_in_all_tours{
+    border: 4px solid black;
+    /* background-color: rgb(221, 207, 255); */
+    background-image: url('img/126.png');
+    box-shadow: 4px 2px 7px black;
+    width: 90%;
+    margin-bottom: 50px;
+}
+.name_all_tours{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+.text_all_tours{
+    font-size: 20px;
+}
+.button_info_tour{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(194, 194, 194);
+    border-left:0;
+    border-right:0;
+    font-size: 17px;
+    margin-top: 15px;
+    border-top: 2px solid black;
+    outline: none;
+}
+.button_info_tour:hover{
+    background-color: rgb(137, 137, 137);
+}
+
+.div_in_all_tours:hover{
+    box-shadow: 8px 8px 15px black; 
+}
+.header_of_all_tour{
+    font-family: 'Rubik One', sans-serif;
+    text-transform: uppercase;
+    /* background: linear-gradient(45deg, #828282 33%, #0d39bc 66%, #ff2945);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #1d3965;
+    /* display: table; */
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+   
+    /*text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    /* border-top: 3px solid black;
+    border-bottom: 3px solid black; */
+    /*border-radius: 35px;*/
+    /* background-color: rgb(225, 222, 222); */
+   
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+   
+    margin-top: 70px;
+    
+    
+}
+
+.p_not_found_search{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.info_img_tour{
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    margin-top: 20px;
+}
+.text_program_tour{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 25px;
+}
+
+.long_description_of_tour{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    background-color: rgb(238, 238, 238);
+    width: 80vw;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    border: 5px solid black;
+    font-weight: 600;
+    box-shadow: 8px 8px 20px rgb(0, 0, 0);
+}
+
+.main_div_users_contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Первый   див */
+.div_for_selected_tour{
+    width: 25vw;
+    border: 4px solid black;
+    border-right: 2px solid black;
+    background-color: rgb(213, 213, 213);
+    padding: 15px;
+    padding-top: 0;
+    box-shadow: 0 0 40px rgb(0, 0, 0) inset; 
+}
+.div_for_selected_tour:hover{
+    box-shadow: 0 0 40px rgb(0, 85, 255) inset; 
+}
+.div_for_selected_tour_img{
+   width: 25vw;
+   border-radius: 50px;
+   box-shadow: 0 0 6px 5px rgb(0, 0, 0);
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.div_for_selected_tour_name{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* .div_for_selected_tour_div_img{
+    border-top: 6px solid rgb(68, 68, 68) ;
+    border-bottom: 6px solid  rgb(68, 68, 68) ;
+    width: 30vw;
+} */
+.chosen_tour_text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.div_for_selected_tour_price{
+    text-align: center;
+    font-size: 35px;
+}
+.p_your_contacts{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.div_for_form_contact_user_label{
+    display: block;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+.div_for_form_contact_user_input{
+    width: 24vw;
+    height: 45px;
+    font-size: 27px;
+    background-color: rgb(255, 255, 255);
+}
+.div_for_form_contact_user{
+    width: 25vw;
+    padding: 15px;
+    padding-top: 0;
+    border:  4px solid black;
+    border-left: 2px solid black;
+    background-color: rgb(213, 213, 213);
+    box-shadow: 0 0 50px rgb(0, 0, 0) inset; 
+}
+.div_for_form_contact_user:hover{
+    box-shadow: 0 0 40px rgb(255, 204, 0) inset; 
+}
+.div_for_form_contact_user_button{
+    width: 24.5vw;
+    height: 65px;
+    display: block;
+    margin-top: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid black;
+    font-size: 25px;
+    font-weight: 600;
+    box-shadow: 5px 5px 3px rgb(72, 72, 72);
+    border-radius: 25px;
+    outline: none;
+}
+.div_for_form_contact_user_button:hover{
+    background-color: blue;
+    font-size: 27px;
+}
+
+
+/*script js*/
+.div_info_photos_arr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.info_about_tour_name{
+    font-family: 'Rubik One', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 15px;
+    color: rgb(50, 50, 50);
+    text-shadow:  1px 1px 2px rgb(255, 255, 255), 
+    -1px -1px 2px #ffffff;
+    /* background: radial-gradient(circle at 65% 15%, rgb(0, 0, 0), darkblue); */
+}
+.arr_of_photo{
+    width: 80vw;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 4px solid black; 
+    border-bottom: 4px solid black; 
+    margin-top: 20px;
+    height: 90vh;
+}
+
+.button_for_slide{
+    width: 10vw;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    border: 4px solid black;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    opacity: 0.7;
+}
+
+.button_for_slide:hover{
+    opacity: 1;
+    border: 5px solid black;
+}
+
+.style_znak{
+    color: rgb(93, 93, 93);
+    font-size: 22px;
+    margin-left: 2px;
+    font-weight: 800;
+}
+.div_with_currency{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.div_with_currency button{
+    width: 10vw;
+    border-radius: 25px;
+    height: 25px;
+    background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+    font-weight: 700;
+}
+.p_chose_currency{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.div_for_text_and_currency{
+    border: 3px solid black;
+    border-radius: 40px;
+    margin-top: 20px;
+    background-image: url('img/126.png');
+    /* background: linear-gradient(to right, #c2f095, #f4ff8e); */
+}
+.create_comments textarea{
+    font-family: 'Rubik One';
+    color: rgb(59, 59, 59);
+    font-size: 25px;
+    display: block;
+    width: 80vw;
+    height: 80px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 9px 10px rgb(71, 70, 70);
+    background-color: wheat;
+    border: 5px solid rgb(32, 32, 32);
+    /* border-radius: 30%; */
+    outline: none;
+}
+.add_file_to_comment_label{
+    margin-left: 10vw;
+    font-size: 25px;
+    font-weight: 600;
+}
+.box_for_image_in_comments{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    position: relative;
+    width: 15%;
+}
+
+.photo_in_comments{
+    display: none;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    opacity: 0.4;
+    /* border-radius: 10px; */
+}
+.text_under_photo_in_comments{
+    font-family: 'Rubik One';
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+/* .photo_in_comments:hover{
+    opacity: 1;
+} */
+.add_file_to_comment{
+    font-size: 20px;
+}
+.add_com_button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    /* box-shadow: 5px 5px 3px rgb(72, 72, 72); */
+    border-radius: 25px;
+    outline: none;
+}
+.create_comments textarea:hover{
+background-color: white;
+}
+.p_comments_of_chosen_tour{
+    text-align: center;
+    font-family: 'Rubik One', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-size: 50px;
+    color: rgb(53, 80, 255);
+
+}
+.div_comment{
+    border: 5px solid black;
+    background-color: rgb(126, 126, 126); 
+    margin-bottom: 30px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 10px;
+}
+.name_comment{
+    font-family: 'Rubik One', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(237, 250, 117);
+    text-shadow: 2px 2px 3px black;
+}
+.p_comment{
+    font-size: 20px;
+    font-weight: 700;
+    color: snow;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.p_burning_tours{
+    font-family: 'Rubik One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 15px;
+    color: rgb(46, 46, 113);
+}
+.video{
+    width:100% ;
+}
+/* .div_for_video{
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+} */
+.arrow_down{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    border: 9px solid black;
+    height: 60vh;
+}
+#nav_arrow_down{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+}
+.arrow_down:hover{
+    opacity: 1;
+    background-color: rgba(201, 201, 201, 0.564);
+}
+.div_where_i_save_photo_for_comments{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+.img_comment_button_right{
+    position: fixed;
+    z-index: 101;
+    width: 7%;
+    top: 0;
+    right: 0;
+    /* display: block; */
+    height: 100%;
+    /* background-color: #919191; */
+    border: 3px solid black;
+    font-size: 25px;
+    font-weight: 600;
+    background-image: url('/img/76.png');
+    outline: none;
+}
+.img_comment_button_left{
+    position: fixed;
+    z-index: 101;
+    width: 7%;
+    top: 0;
+    left: 0;
+    /* display: block; */
+    height: 100%;
+    /* background-color: #919191; */
+    border: 3px solid black;
+    font-size: 25px;
+    font-weight: 600;
+    background-image: url('/img/76.png');
+    outline: none;
+}
+.it_temp_class_for_photo{
+    width: 86%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    opacity: 1;
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.close_slide{
+    position: fixed;
+    z-index: 101;
+    width: 40px;
+    top: 0;
+    right: 7%;
+    /* display: block; */
+    height: 35px;
+    background-color: #58585890;
+    font-size: 25px;
+    border: 0;
+}
+.warning_tours_is_not_find{
+    text-align: center;
+    font-size: 60px;
+}
+.sad_cat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+.message_for_auth_in_info{
+    font-family: 'Rubik One', sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+}
+.message_for_auth_in_info:hover{
+    color: rgb(90, 89, 89);
+}
+.message_for_auth_in_info_form{
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.in_developing{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 200px;
+}
