@@ -8,7 +8,7 @@
 <body>
       <header>
             <div class = 'header'>
-                <img src="img/logo.png" alt="" class = 'logo'>
+                <img src="img/logo3.png" alt="" class = 'logo'>
                 <div class = 'navigation'>
                   <button onclick="location.href = 'index.php'">Главная</button>
                   <button onclick="location.href = 'tours.php'">Туры</button>
